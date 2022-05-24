@@ -1,0 +1,58 @@
+﻿<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" ID="_dd15e2e0-9401-013a-7a4f-0022689c15c2" entityID="https://federation.dev.cce.af.mil/sso/saml_properties/4478/metadata.xml">
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <ds:Reference URI="#_dd15e2e0-9401-013a-7a4f-0022689c15c2">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+          <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+        <ds:DigestValue>dLdLywGELW5Be07QE24uCyHXKKp057Sd40iPMYo7baA=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>1H76JUEogaY5/IfdKL7MK4AVtDwYQQaat2Tmkd5L9U7ZDCKz4vayTbFWSQz4aqGuHE1PBIC717M2x21F6wjJdmHEtfjXOARPBWoIuWI1CC+Qw3dwFN0kDWKSJ5nKNlLAV1JrL5jf7u6ch2i4sF5iunDuaxC5rxpOG4HlsvR7GO24i1Wp33YHq7btzddnJS6PxXGajoejh3infoWpmG/wkbTm0fH0MXxYMd2yEO3xGi/djSFFuqnd4njB4vmJvy2Ib3tW4kIb7tLHSD8BvKK8ofGiuKJWYLBKkbc7yJFHXcH+CL9SOMywDnR2i4s8Xq3FeoQF83sZGvLw2mZOIyv0hQ==</ds:SignatureValue>
+    <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <ds:X509Data>
+        <ds:X509Certificate>MIIErjCCA5agAwIBAgIEAgAgLzANBgkqhkiG9w0BAQsFADBaMQswCQYDVQQGEwJVUzEYMBYGA1UEChMPVS5TLiBHb3Zlcm5tZW50MQwwCgYDVQQLEwNEb0QxDDAKBgNVBAsTA1BLSTEVMBMGA1UEAxMMRE9EIFNXIENBLTYwMB4XDTIwMDcyOTE3MjEzN1oXDTIyMTEwMTE3MjEzN1owejELMAkGA1UEBhMCVVMxGDAWBgNVBAoMD1UuUy4gR292ZXJubWVudDEMMAoGA1UECwwDRG9EMQwwCgYDVQQLDANQS0kxDDAKBgNVBAsMA1VTQTEnMCUGA1UEAwweZmVkZXJhdGlvbi1zYW1sLmRldi5jY2UuYWYubWlsMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA16a1CvBNCUzTnw3DbbwAx42e3cqRzR7ab+sgKBiG5jQm1X1sijpZ/6+Om066+gyrGSYPvDPyIs7+IYPnZ/YyUDoxL1FQB57tH3xxHuvzuTyONHpQaceX+LZ1Aw1tJgTLTUnFUWYRUMp+Xd2pSiuAkDrmY5lHDD7u1VxTU4yw+AxiMmlz4x3iC4cx6NtQ9KwM8iRV1P6fyhqWb44JTO40WmZ3HmV7q18Rwler7dcVF91Ou1AmPKkAjqqMbRejmm3BJ5+Tz5C9KKKwqBgix60cbQvgAG+onw2G68a08cL9sPM98C9Dq60rrbLWrJd0sbhFtQUNKU0dSh55MVUj217uWQIDAQABo4IBWjCCAVYwHwYDVR0jBBgwFoAUff7wEBc5v9NyhP2tKXD44j2Z8xgwZQYIKwYBBQUHAQEEWTBXMDMGCCsGAQUFBzAChidodHRwOi8vY3JsLmRpc2EubWlsL3NpZ24vRE9EU1dDQV82MC5jZXIwIAYIKwYBBQUHMAGGFGh0dHA6Ly9vY3NwLmRpc2EubWlsMA4GA1UdDwEB/wQEAwIFoDA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vY3JsLmRpc2EubWlsL2NybC9ET0RTV0NBXzYwX1NTTC5jcmwwKQYDVR0RBCIwIIIeZmVkZXJhdGlvbi1zYW1sLmRldi5jY2UuYWYubWlsMBYGA1UdIAQPMA0wCwYJYIZIAWUCAQskMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAdBgNVHQ4EFgQU60y5rb+OeYMzowM7c/8x4KUz73cwDQYJKoZIhvcNAQELBQADggEBALC21eoR8I6ypd2aXro5MlTcy3sR9sRb4XRQuobZfFrZkT6TgfWLkPAcGKIIyTF1Erkkf9noqSbUhir5+tB1o4tT/0kp6XdpcJmHXJkYV48IHkckESD3QvmTdq5VGST/SBgAdaYTFEoLHg4M8DCxBXgr9d0R1kp8HHYEJCZ99tKOAFsJYs2iXqu1QdKLgpuFZFvVvW8eetmqFCx0fyq5Rb+iH608MHQh4FoRsok9nNrPEpBuWcWt1mGDa16rewgpDUXEBYrM4TcWiArEvDBcvSLgG7h2ReEduiE/iR8BAn08zfwbmDoHKIHbLKJj3JaEQ5DLcQBFyk5ZwYJP0fGSKFA=</ds:X509Certificate>
+      </ds:X509Data>
+    </KeyInfo>
+  </ds:Signature>
+  <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <KeyDescriptor use="signing">
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <X509Data>
+          <X509Certificate>MIIErjCCA5agAwIBAgIEAgAgLzANBgkqhkiG9w0BAQsFADBaMQswCQYDVQQGEwJVUzEYMBYGA1UEChMPVS5TLiBHb3Zlcm5tZW50MQwwCgYDVQQLEwNEb0QxDDAKBgNVBAsTA1BLSTEVMBMGA1UEAxMMRE9EIFNXIENBLTYwMB4XDTIwMDcyOTE3MjEzN1oXDTIyMTEwMTE3MjEzN1owejELMAkGA1UEBhMCVVMxGDAWBgNVBAoMD1UuUy4gR292ZXJubWVudDEMMAoGA1UECwwDRG9EMQwwCgYDVQQLDANQS0kxDDAKBgNVBAsMA1VTQTEnMCUGA1UEAwweZmVkZXJhdGlvbi1zYW1sLmRldi5jY2UuYWYubWlsMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA16a1CvBNCUzTnw3DbbwAx42e3cqRzR7ab+sgKBiG5jQm1X1sijpZ/6+Om066+gyrGSYPvDPyIs7+IYPnZ/YyUDoxL1FQB57tH3xxHuvzuTyONHpQaceX+LZ1Aw1tJgTLTUnFUWYRUMp+Xd2pSiuAkDrmY5lHDD7u1VxTU4yw+AxiMmlz4x3iC4cx6NtQ9KwM8iRV1P6fyhqWb44JTO40WmZ3HmV7q18Rwler7dcVF91Ou1AmPKkAjqqMbRejmm3BJ5+Tz5C9KKKwqBgix60cbQvgAG+onw2G68a08cL9sPM98C9Dq60rrbLWrJd0sbhFtQUNKU0dSh55MVUj217uWQIDAQABo4IBWjCCAVYwHwYDVR0jBBgwFoAUff7wEBc5v9NyhP2tKXD44j2Z8xgwZQYIKwYBBQUHAQEEWTBXMDMGCCsGAQUFBzAChidodHRwOi8vY3JsLmRpc2EubWlsL3NpZ24vRE9EU1dDQV82MC5jZXIwIAYIKwYBBQUHMAGGFGh0dHA6Ly9vY3NwLmRpc2EubWlsMA4GA1UdDwEB/wQEAwIFoDA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vY3JsLmRpc2EubWlsL2NybC9ET0RTV0NBXzYwX1NTTC5jcmwwKQYDVR0RBCIwIIIeZmVkZXJhdGlvbi1zYW1sLmRldi5jY2UuYWYubWlsMBYGA1UdIAQPMA0wCwYJYIZIAWUCAQskMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAdBgNVHQ4EFgQU60y5rb+OeYMzowM7c/8x4KUz73cwDQYJKoZIhvcNAQELBQADggEBALC21eoR8I6ypd2aXro5MlTcy3sR9sRb4XRQuobZfFrZkT6TgfWLkPAcGKIIyTF1Erkkf9noqSbUhir5+tB1o4tT/0kp6XdpcJmHXJkYV48IHkckESD3QvmTdq5VGST/SBgAdaYTFEoLHg4M8DCxBXgr9d0R1kp8HHYEJCZ99tKOAFsJYs2iXqu1QdKLgpuFZFvVvW8eetmqFCx0fyq5Rb+iH608MHQh4FoRsok9nNrPEpBuWcWt1mGDa16rewgpDUXEBYrM4TcWiArEvDBcvSLgG7h2ReEduiE/iR8BAn08zfwbmDoHKIHbLKJj3JaEQ5DLcQBFyk5ZwYJP0fGSKFA=</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+    <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://federation.dev.cce.af.mil/sso/logout?u=ais.gcds.local"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://federation.dev.cce.af.mil/pool/sso/saml/authenticate"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="issuer"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="subject"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="edipi"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="issue_date"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="expiration_date"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="revocation_status"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="sans"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="serial"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="certificate_policies"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="fingerprint"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="common_name"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="fascn"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="userPrincipalName"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="iv-user"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="otherMails"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="givenName"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="surname"/>
+    <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="iv_groups"/>
+  </IDPSSODescriptor>
+  <Organization>
+    <OrganizationName xml:lang="en">USAF CCE Development</OrganizationName>
+    <OrganizationDisplayName xml:lang="en">USAF CCE Development</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en">https://federation.dev.cce.af.mil</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="technical"/>
+</EntityDescriptor>
