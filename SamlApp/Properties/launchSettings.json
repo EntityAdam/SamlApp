@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://ais.gcds.local:25873",
-      "sslPort": 44350
+      "applicationUrl": "http://localhost:25873",
+      "sslPort": 44302
     }
   },
   "profiles": {

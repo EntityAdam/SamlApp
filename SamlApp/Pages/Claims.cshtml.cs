@@ -10,10 +10,9 @@ namespace SamlApp.SustainSys.Pages
         public IEnumerable<Claim> Claims { get; set; } = new List<Claim>();
         public void OnGet()
         {
-            var identity = User.Identity;
-            if (identity is ClaimsIdentity claimsIdentityInstance)
+            if (User.Claims.Any())
             {
-                Claims = claimsIdentityInstance.Claims.ToList();
+                Claims = User.Claims;
             }
         }
     }

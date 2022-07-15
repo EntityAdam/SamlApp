@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.CookiePolicy;
 using Sustainsys.Saml2;
 using Sustainsys.Saml2.Metadata;
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,8 +25,23 @@ builder.Services.AddAuthentication(sharedOptions =>
 .AddSaml2(options =>
 {
     options.SPOptions.EntityId = new EntityId(samlConfiguration["EntityId"]);
-    options.SPOptions.PublicOrigin = new Uri(samlConfiguration["PublicOrigin"]);
     options.SPOptions.ReturnUrl = new Uri(samlConfiguration["ReturnUrl"]);
+    // Mechanism to modify the NameClaimType
+    options.Notifications.AcsCommandResultCreated = (commandResult, saml2Response) =>
+    {
+        if (commandResult.Principal is not null && commandResult.Principal.Identity is ClaimsIdentity identity)
+        {
+            var edipi = identity.Claims.Single(x => x.Type == "edipi");
+            var nameClaim = new Claim(ClaimTypes.Name, edipi.Value);
+            identity.AddClaim(nameClaim);
+        }
+    };
+    if (!builder.Environment.IsDevelopment())
+    {
+        // This does not need to be configured for local development
+        // This MAY need to be configured to run on Azure App Service in a RP scenario
+        options.SPOptions.PublicOrigin = new Uri(samlConfiguration["PublicOrigin"]);
+    }
     var identityProvider = new IdentityProvider(new EntityId(samlConfiguration["IpEntityId"]), options.SPOptions)
     {
         MetadataLocation = samlConfiguration["IpMetadataUrl"], //"~/metadata.xml",
