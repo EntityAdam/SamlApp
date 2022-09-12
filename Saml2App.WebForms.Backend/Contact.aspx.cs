@@ -24,13 +24,15 @@ namespace Saml2App.WebForms.Backend
 
                 foreach(var c in claims)
                 {
-                    HttpContext.Current.Response.Write($"Claimn: {c.Issuer} - {c.Type} - {c.Value}\n");
+                    HttpContext.Current.Response.Write($"Claim: {c.Issuer} - {c.Type} - {c.Value}\n");
                 }
 
                 HttpContext.Current.Response.End();
             }
             else
             {
+                //equvalent of Authentication Challenge
+                HttpContext.Current.Response.Headers.Add("Www-Authenticate", "saml2");
                 HttpContext.Current.Response.StatusCode = 401;
                 HttpContext.Current.Response.Write("Nooope! Forbidden");
                 HttpContext.Current.Response.End();

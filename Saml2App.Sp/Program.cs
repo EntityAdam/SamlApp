@@ -20,15 +20,18 @@ builder.Services.AddAuthentication(sharedOptions =>
     options.SPOptions.ReturnUrl = new Uri(samlConfiguration["ReturnUrl"]);
     var identityProvider = new IdentityProvider(new EntityId(samlConfiguration["IpEntityId"]), options.SPOptions)
     {
-        MetadataLocation = samlConfiguration["IpMetadataUrl"], //"~/metadata.xml",
+        // url or relative path "~/metadata.xml"
+        MetadataLocation = samlConfiguration["IpMetadataUrl"],
+        // load metadata must follow the metadata location
         LoadMetadata = true,
     };
     options.IdentityProviders.Add(identityProvider);
 })
 .AddCookie(options =>
 {
+    // Cookie configuration to share cookie with a .NET Framework WebForms application
     options.Cookie.Name = ".AspNet.SharedCookie";
-    options.Cookie.SameSite = SameSiteMode.None;
+    options.Cookie.SameSite = SameSiteMode.Lax;
     options.Cookie.Path = "/";
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
@@ -66,5 +69,3 @@ app.Run(async context =>
     }
 });
 app.Run();
-
-//nssi.cce.af.mil/auth/saml2/acs/
